@@ -1,18 +1,21 @@
 # Como publicar no GitHub e compartilhar para testes
 
-O pacote inclui um repositório Git em formato bundle (`99food-delivery-redesign.bundle`) e uma versão ZIP dos arquivos do site.
+O projeto está organizado para publicação como site estático no GitHub Pages. Há duas formas de publicar.
 
-## 1. Criar o repositório remoto
+## Opção A — deixar que eu envie os arquivos pelo GitHub conectado
 
 1. Acesse https://github.com/new.
-2. Nome: `99food-delivery-redesign`.
-3. Marque **Public** se quiser compartilhar com participantes por um link público.
-4. Não marque as opções de criar README, `.gitignore` ou licença: os arquivos já estão no projeto.
-5. Clique em **Create repository**.
+2. Nome do repositório: `99food-delivery-redesign`.
+3. Marque **Public** para gerar um link que você possa compartilhar com participantes.
+4. Marque **Add a README file** para inicializar a branch `main`.
+5. Não precisa adicionar `.gitignore` nem licença: esses arquivos já estão neste projeto.
+6. Clique em **Create repository** e envie o link do repositório nesta conversa.
 
-## 2. Enviar o histórico pronto (Windows PowerShell)
+Com a branch inicial criada, consigo enviar os arquivos do projeto para esse repositório usando a conexão GitHub disponível.
 
-Coloque `99food-delivery-redesign.bundle` em uma pasta local e execute:
+## Opção B — publicar você mesmo usando o Git bundle
+
+Coloque `99food-delivery-redesign.bundle` em uma pasta local e crie um repositório público vazio no GitHub (sem README, licença ou `.gitignore`). No PowerShell, execute:
 
 ```powershell
 git clone .\99food-delivery-redesign.bundle 99food-delivery-redesign
@@ -21,9 +24,9 @@ git remote add origin https://github.com/SEU_USUARIO/99food-delivery-redesign.gi
 git push -u origin main
 ```
 
-Troque `SEU_USUARIO` pelo seu usuário do GitHub. Se preferir, também é possível extrair o ZIP, abrir a pasta no GitHub Desktop e publicar o repositório por lá.
+Troque `SEU_USUARIO` pelo seu usuário do GitHub.
 
-## 3. Ativar o site público
+## Ativar o site público
 
 1. No repositório, abra **Settings → Pages**.
 2. Em **Build and deployment → Source**, selecione **GitHub Actions**.
