@@ -66,3 +66,7 @@
 .message-entry-meta>b{font-size:17px;color:#9a6c00}
 .messages-note{font-size:10px;color:var(--muted);line-height:1.6;margin:12px 0 24px}
 @media(max-width:680px){.messages-filters{gap:7px}.messages-filter{padding:9px 13px}.message-entry{gap:10px;padding:13px}.message-entry-icon{width:42px;height:42px;font-size:20px}.message-entry-title{font-size:12px}.message-entry-preview{max-width:52vw}.message-entry-tag{font-size:8px;padding:5px 7px}}
+
+/* Logo do rodape como unico atalho para inicio */
+.footer-home{border:0;background:transparent;padding:0;color:inherit;font:inherit;cursor:pointer;text-align:left}
+.footer-home:focus-visible{outline:3px solid #d99b00;outline-offset:5px;border-radius:8px}
