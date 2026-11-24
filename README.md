@@ -172,3 +172,8 @@ Como o site é estático, não precisa de servidor de aplicação nem banco de d
 ### Publicar automaticamente com GitHub Actions
 
 O repositório inclui `.github/workflows/pages.yml`. Depois de enviar a branch `main`, abra **Settings → Pages**, escolha **GitHub Actions** como fonte de publicação e aguarde a execução do workflow na aba **Actions**. O endereço público ficará disponível em **Settings → Pages** e no resumo do workflow concluído.
+
+
+## Caixa de entrada de Mensagens
+
+A navegação inferior e o Perfil oferecem acesso direto à caixa de entrada. A tela reúne atalhos de conversa com a loja, acompanhamento do pedido e Ajuda da 99, com filtros por Todas, Lojas, Pedidos e Ajuda. Os canais continuam separados e reutilizam as telas e os dados demonstrativos já existentes no protótipo.
